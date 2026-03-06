@@ -1,42 +1,28 @@
-# Wordle
+# Wordle Android Clone
 
-A lightweight, custom-built Wordle clone for Android.
+A Wordle replica built natively for Android.
 
-🚀 The Story Behind the Project
-This app was developed in exactly one week. It started as a "just for fun" project because I found most Wordle versions on Google Play to be cluttered with ads, slow, or just visually unappealing. I wanted a clean, fast, and authentic experience, so I built my own.
+## 🚀 The Story Behind the Project
+This app was developed in **one week**. It started as a personal challenge and a "just for fun" project because I was not satisfied with the versions available on Google Play. Most existing apps are:
+* Cluttered with advertisements.
+* Containing in-game purchases.
+* Visually unappealing or overcomplicated.
 
-✨ Features
-Custom Word Engine: Picks a random 5-letter word for every new game.
+I wanted to create an experience that is **100% ad-free and easy to use**, staying true to the original game's essence. Another reason was my wish to play wordle more times than once a day.
 
-Smart Keyboard: A dynamic keyboard that updates key colors (Green, Yellow, Gray) based on your progress, helping you track used letters.
+## ✨ Features
+* **Smart Virtual Keyboard:** Updates in real-time with color feedback (Green, Yellow, Gray).
+* **Color Priority Logic:** Prevents a key from changing back to yellow if it has already been identified as green.
+* **Word Validation:** Guesses are checked against a dictionary to ensure they are valid words.
+* **Custom Word Engine:** Picks a random 5-letter word for every session.
+* **Minimalist UI:** Focused entirely on the gameplay with no distractions.
 
-Validation Logic: Integrated dictionary check to ensure only valid words are submitted.
+## 📚 Assets & Credits
+The dictionaries (`word_bank.txt` and `valid_words.txt`) used in this project were sourced from a public repository on **GitHub**. Special thanks to the open-source community for providing clean word lists for developer projects. However the list is not updated, there are many words missing.
 
-Clean Design: Focused on the core gameplay without distractions.
-
-🛠️ How it Works (Under the Hood)
-The project follows SOLID principles to ensure the code is maintainable and scalable:
-
-Arhitecture: I separated the concerns using specialized Managers.
-
-GridManager: Handles the 6x5 display grid and cell coloring.
-
-KeyboardManager: Manages the on-screen keyboard, event listeners, and color states.
-
-GameLogic: The "brain" of the game that compares guesses against the target word.
-
-WordManager: Responsible for reading assets and word validation.
-
-Callback Pattern: Used a KeyboardCallback interface to decouple the UI from the keyboard logic, making the interaction between components seamless.
-
-📚 Assets & Credits
-The word list (dictionary) used in this project was sourced from a public GitHub repository. Big thanks to the community for providing clean datasets for word games!
-
-🔧 Installation
-Clone this repository.
-
-Open in Android Studio.
-
-Ensure the assets folder contains word_bank.txt and valid_words.txt.
-
-Build and run on your device (API 32+ recommended).
+## 🔧 Installation & Setup
+To run this project on your device:
+1. Clone this repository.
+2. Open the project in **Android Studio**.
+3. Ensure the `assets` folder contains your dictionary files.
+4. Build and run (Compatible with **API 32** and above).
